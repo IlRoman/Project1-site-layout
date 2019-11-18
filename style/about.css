@@ -5,15 +5,19 @@
     justify-content: space-between;
     background-color: #F4F5F7;
 }
+
 .article{
     width: 555px;
 }
+
+
 .article__title{
     font-weight: 700;
     font-size: 22px;
     line-height: 32px;
     margin: 0;
 }
+
 .article__text{
     font-size: 22px;
     line-height: 32px;
