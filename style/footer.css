@@ -1,84 +1,106 @@
-.footer{
-    margin-top: auto;
+.footer {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0;
+    margin-top: auto; 
 }
-.footer-navigation{
-    width: 1140px;
-    margin: 0 auto;
-    height: 338px;
-    display: flex;
-}
-.footer__description{
+
+.footer__description {
     line-height: 26px;
     font-size: 18px;
     width: 360px;
     margin-top: 26px;
     color: rgba(43, 41, 45, 0.6);
 }
-.downloads{
-    margin-top: 25px;
-}
-.download__item{
-    margin-right: 10px;
-}
-.about-company{
+
+.about-company {
     margin-top: 44px;
 }
-.additional-navigation{
+
+.footer-navigation {
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+    height: 338px;
+}
+
+.downloads {
+    margin-top: 25px;
+}
+
+.downloads__item {
+    margin-right: 10px;
+}
+
+.additional-navigation {
+    display: flex;
     margin-top: 60px;
     margin-left: auto;
-    display: flex;
 }
-.additional-navigation__column{
+
+.additional-navigation__column {
     margin-right: 29px;
 }
-.nav-links{
+
+.nav-links {
     width: 265px;
 }
-.nav-links__title{
+
+.nav-links__title {
+    color: #2B292D;
     font-weight: bold;
     font-size: 22px;
     line-height: 28px;
-    color: #28292D;
     margin: 0;
 }
-.nav-links__list{
+
+.nav-links__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2B292D;
+    margin: 0;
+}
+
+.nav-links__list {
     list-style-type: none;
     font-size: 18px;
     line-height: 30px;
-    color:rgba(43, 41, 45, 0.6);
+    color: rgba(43, 41, 45, 0.6);
+    padding: 0;
     margin: 0;
     margin-top: 18px;
-    padding: 0;
 }
 
-.footer-links{
+.footer__line {
+    border-top: 1px solid #2B292D;
+    width: 100%;
+    opacity: 0.1;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
     width: 1140px;
     height: 50px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
 }
-.terms{
+
+.terms {
     line-height: 50px;
     font-size: 14px;
 }
-.terms__items{
+
+.terms__items {
     text-decoration: none;
     color: rgba(43, 41, 45, 0.6);
     margin-right: 22px;
 }
-.footer__line{
-    border-top: 1px solid #2B292D;
-    width: 100%;
-    margin: 0;
-    opacity: 0.1;
-}
-.solial-links{
+
+.social-links {
     margin-left: auto;
 }
-.solial-links__item{
+
+.social-links__item {
     margin-left: 20px;
 }
