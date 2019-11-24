@@ -1,0 +1,39 @@
+.about {
+    background: #F4F5F7;
+    padding: 46px 15px;
+    width: 100%;
+
+    @include for-large {
+        display: flex;
+        justify-content: space-between;
+        padding: 77px 130px 76px 130px;
+    }
+}
+
+.article {
+    @include for-large {
+        width: 555px;
+    }
+
+    &:last-child {
+        margin-top: 20px;
+
+        @include for-large {
+            margin-top: 0px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 32px;
+        margin: 0;
+    }
+
+    &__text {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 0;
+        margin-top: 6px;
+    }
+}

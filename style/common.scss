@@ -9,14 +9,14 @@
     border: none;
 }
 
-@media screen and (min-width: 400px) {
-    .hide-desktop {
+.hide-desktop {
+    @include for-large {
         display: none;
     }
 }
 
-@media screen and (max-width: 399px) {
-    .hide-mobile {
+.hide-mobile {
+    @include for-large-down {
         display: none;
     }
 }
