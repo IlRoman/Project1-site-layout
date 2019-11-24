@@ -1,22 +1,29 @@
 .action-button {
-    background-color: #3040C4;
-    color: #fff;
-    width: 160px;
-    height: 48px;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 2px;
-    border: none;
+  background-color: #3040c4;
+  color: #fff;
+  width: 160px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 2px;
+  border: none;
 }
 
 .hide-desktop {
-    @include for-large {
-        display: none;
-    }
+  @include for-large {
+    display: none;
+  }
 }
 
 .hide-mobile {
-    @include for-large-down {
-        display: none;
-    }
+  @include for-large-down {
+    display: none;
+  }
+}
+
+.icon-arrow_right {
+  display: block;
+  background-image: url(../img/Arrow.png);
+  width: 7px;
+  height: 12px;
 }
