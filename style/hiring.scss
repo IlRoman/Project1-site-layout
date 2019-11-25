@@ -2,6 +2,14 @@
   text-align: center;
   margin: 50px 15px 0 15px;
 
+  @include for-large {
+    margin-top: 103px;
+    margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &-title {
     margin: 0;
     font-family: Work Sans;
@@ -22,8 +30,13 @@
   }
 
   &-button {
-    width: 100%;
     margin-bottom: 39px;
+    width: 100%;
+
+    @include for-large {
+      max-width: 247px;
+      margin-bottom: 110px;
+    }
   }
 
   &-container {
@@ -32,13 +45,31 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid rgba(43, 41, 45, 0.2);
     border-radius: 0px 8px 8px 0px;
     margin-bottom: 15px;
+
+    @include for-large {
+      width: 750px;
+      height: 81px;
+      border-radius: 8px;
+    }
 
     &_text {
       margin-left: 20px;
       margin-right: 21px;
+
+      @include for-large {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+
+    &:hover {
+      background-color: #3040c4;
+      color: #fff;
+      box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.07), 0px 13px 18px rgba(0, 0, 0, 0.15);
     }
   }
 
@@ -49,6 +80,11 @@
     height: 140px;
     width: 50px;
     background-color: #d5d4d5;
+
+    @include for-large {
+      height: 100%;
+      background: none;
+    }
   }
 
   .first_line {
@@ -58,6 +94,10 @@
     font-size: 22px;
     line-height: 28px;
     color: #2b292d;
+
+    @include for-large {
+      width: 408px;
+    }
   }
 
   .second_line {
@@ -69,5 +109,11 @@
     color: #2b292d;
     mix-blend-mode: normal;
     opacity: 0.6;
+
+    @include for-large {
+      display: block;
+      margin-right: 15px;
+      width: 232px;
+    }
   }
 }
