@@ -619,58 +619,6 @@
   }
 }
 
-.tips {
-  margin-top: 8px;
-}
-@media screen and (min-width: 1400px) {
-  .tips {
-    display: none;
-  }
-}
-
-.tip {
-  padding: 40px 15px 0 15px;
-  border-bottom: 1px solid #e3e3e3;
-}
-.tip__subtitle {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 34px;
-  color: #009b4d;
-}
-.tip__title {
-  margin: 0;
-  margin-top: 17px;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
-  letter-spacing: -0.35px;
-}
-.tip__description {
-  font-size: 22px;
-  line-height: 34px;
-  margin: 0;
-  margin-top: 13px;
-}
-.tip__decoration {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  margin-bottom: 40px;
-}
-.tip__image {
-  margin-top: 29px;
-}
-.tip__image-caption {
-  font-size: 14px;
-  line-height: 22px;
-  text-align: center;
-  color: rgba(43, 41, 45, 0.6);
-  margin-top: 20px;
-  max-width: 100%;
-}
-
 .order {
   width: 100%;
   padding: 50px 15px;
@@ -760,6 +708,58 @@
 }
 .order__terms-link {
   color: #3142c6;
+}
+
+.tips {
+  margin-top: 8px;
+}
+@media screen and (min-width: 1400px) {
+  .tips {
+    display: none;
+  }
+}
+
+.tip {
+  padding: 40px 15px 0 15px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.tip__subtitle {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 34px;
+  color: #009b4d;
+}
+.tip__title {
+  margin: 0;
+  margin-top: 17px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.35px;
+}
+.tip__description {
+  font-size: 22px;
+  line-height: 34px;
+  margin: 0;
+  margin-top: 13px;
+}
+.tip__decoration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.tip__image {
+  margin-top: 29px;
+}
+.tip__image-caption {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(43, 41, 45, 0.6);
+  margin-top: 20px;
+  max-width: 100%;
 }
 
 .inbox {
@@ -896,6 +896,114 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #0185d0;
 }
 
+.communication {
+  padding: 50px 15px;
+}
+@media screen and (min-width: 1400px) {
+  .communication {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 110px 130px 110px 126px;
+  }
+}
+.communication__button {
+  align-self: flex-start;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1400px) {
+  .communication__button {
+    margin-bottom: 87px;
+  }
+}
+.communication__image {
+  margin-bottom: 17px;
+  padding: 0;
+}
+@media screen and (min-width: 1400px) {
+  .communication__image {
+    margin-right: 63px;
+  }
+}
+.communication__image-caption {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.communication__additional-info {
+  font-size: 18px;
+  line-height: 26px;
+  color: #2b292d;
+}
+@media screen and (min-width: 1400px) {
+  .communication__additional-info {
+    display: flex;
+  }
+}
+.communication .column-wrapper .column .communication__subtitle {
+  color: #0189d1;
+  margin-bottom: 17px;
+}
+@media screen and (min-width: 1400px) {
+  .communication .column-wrapper .column .communication__subtitle {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .communication__title {
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 462px;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .communication__description {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0;
+    margin-bottom: 39px;
+    max-width: 460px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .subscription {
+    max-width: 360px;
+    margin-right: 30px;
+  }
+  .subscription:last-child {
+    margin-right: 0;
+  }
+}
+.subscription__text {
+  margin-bottom: 5px;
+  margin-top: 33px;
+}
+.subscription__link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #3142c6;
+  margin: 0;
+}
+
+.communication__line {
+  align-self: flex-start;
+  width: 150px;
+  height: 1px;
+  background: #000;
+  opacity: 0.1;
+  margin-top: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -919,4 +1027,4 @@ html {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
