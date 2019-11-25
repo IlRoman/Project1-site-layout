@@ -676,13 +676,29 @@
 }
 @media screen and (min-width: 1400px) {
   .order {
-    padding: 73px 72px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 73px 0 72px 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .order__details {
+    max-width: 555px;
+    margin: auto;
+    margin-right: 230px;
   }
 }
 .order__illustration {
   display: block;
   max-width: 200px;
   margin: auto;
+}
+@media screen and (min-width: 1400px) {
+  .order__illustration {
+    max-width: 269px;
+    margin-left: 224px;
+  }
 }
 .order__title {
   font-weight: 700;
@@ -696,6 +712,11 @@
   line-height: 34px;
   margin-bottom: 18px;
 }
+@media screen and (min-width: 1400px) {
+  .order__form {
+    display: flex;
+  }
+}
 .order__email {
   margin-top: 40px;
   background: #ffffff;
@@ -707,12 +728,28 @@
   font-size: 18px;
   line-height: 13px;
 }
+@media screen and (min-width: 1400px) {
+  .order__email {
+    margin-top: 0;
+  }
+}
 .order__email::placeholder {
   color: #2b292d;
 }
 .order-button {
   margin-top: 12px;
-  width: 100%;
+}
+@media screen and (max-width: 1399px) {
+  .order-button {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .order-button {
+    margin-top: 0;
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
 }
 .order__terms {
   font-size: 14px;
@@ -735,12 +772,10 @@ html {
 
 .page {
   width: 100%;
-  overflow-x: hidden;
 }
-
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 1400px) {
   .page {
-    width: 1400px;
+    max-width: 1400px;
     margin: auto;
     min-height: 100vh;
     display: flex;
