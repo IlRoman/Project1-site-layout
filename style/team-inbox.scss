@@ -1,0 +1,139 @@
+.inbox {
+  background: $color-yellow-light;
+
+  @include for-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__column {
+    padding-bottom: 0;
+  }
+
+  &__image {
+    display: block;
+    margin: auto;
+
+    @include for-large-down {
+      width: 290px;
+      padding-top: 50px;
+    }
+
+    @include for-large {
+      width: 425px;
+      display: block;
+      margin: 142px auto 138px 193px;
+    }
+  }
+
+  &__wrapper {
+    margin: 0 15px 0 15px;
+
+    @include for-large {
+      margin-right: 99px;
+      width: 519px;
+    }
+  }
+
+  &-column__subtitle {
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 34px;
+    color: #f1592b;
+
+    @include for-large {
+      margin-bottom: 12px;
+    }
+  }
+
+  &-column__title {
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    color: #2b292d;
+
+    @include for-large {
+      font-size: 56px;
+      line-height: 56px;
+      margin-top: 12px;
+    }
+  }
+
+  &-column__description {
+    font-family: Work Sans;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    color: #2b292d;
+  }
+
+  &-note {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%), #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    height: 321px;
+
+    @include for-large {
+      margin-top: 44px;
+      height: 213px;
+    }
+  }
+
+  &-note__content {
+    padding: 30px 20px 0 20px;
+    font-family: Work Sans;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #2b292d;
+  }
+
+  &-note__profile {
+    display: flex;
+    align-items: center;
+
+    &-avatar {
+      display: block;
+      max-height: 40px;
+      margin-right: 11px;
+      margin-bottom: 12px;
+
+      @include for-large {
+        margin-left: 29px;
+      }
+    }
+
+    &-data {
+      height: 66px;
+      width: 199px;
+
+      @include for-large {
+        width: 225px;
+      }
+
+      .fullname {
+        margin: 0;
+        font-family: Work Sans;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #2b292d;
+      }
+
+      .position {
+        margin: 0;
+        color: $color-grey;
+      }
+    }
+  }
+
+  &-line {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%), #0185d0;
+  }
+}

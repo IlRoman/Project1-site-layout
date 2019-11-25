@@ -1,6 +1,7 @@
 .features {
   display: flex;
   position: relative;
+  margin-bottom: 103px;
 
   @include for-large-down {
     display: none;
@@ -85,6 +86,7 @@
   }
 
   &__banner {
+    height: 597px;
     position: absolute;
     right: 0;
   }
