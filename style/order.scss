@@ -2,13 +2,25 @@
   width: 100%;
   padding: 50px 15px;
   background-color: $color-light;
+
   @include for-large {
+    padding: 73px 0 72px 0;
+    display: flex;
+  }
+
+  &__details {
+    max-width: 555px;
   }
 
   &__illustration {
     display: block;
     max-width: 200px;
     margin: auto;
+
+    @include for-large {
+      max-width: 269px;
+      margin-right: 121px;
+    }
   }
 
   &__title {
@@ -33,6 +45,12 @@
     height: 48px;
     width: 100%;
     text-align: center;
+    font-size: 18px;
+    line-height: 13px;
+
+    &::placeholder {
+      color: $color-dark;
+    }
   }
 
   &-button {
